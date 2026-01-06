@@ -1,0 +1,168 @@
+:root {
+  --primary: #1B5E20;
+  --accent: #4CAF50;
+  --light: #f5f7f5;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--light);
+  color: #222;
+}
+
+header {
+  background: white;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid var(--primary);
+}
+
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.hero {
+  padding: 80px 40px;
+  background: linear-gradient(to right, #1B5E20, #4CAF50);
+  color: white;
+}
+
+.section {
+  background: white;
+  margin: 30px;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-left: 5px solid var(--accent);
+}
+
+footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.collab-list {
+  margin-top: 15px;
+  padding-left: 25px;
+}
+
+.collab-list li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #4CAF50;
+  overflow: hidden;
+}
+
+.research-img {
+  width: 100%;
+  height: 180px;
+ object-fit: contain;   /* ✅ GIỮ ĐỦ ẢNH */
+  background: #f7f7f7;   /* nền xám nhẹ */
+
+  border-radius: 6px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.card p {
+  text-align: justify;
+  hyphens: auto;
+}
+
+.img-box {
+  width: 100%;
+  height: 260px;          /* tăng chiều cao */
+  background: #f7f7f7;    /* nền trung tính */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.hero h1 {
+  font-size: 52px;      /* tăng size tiêu đề */
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1.15;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 42px;
+  }
+}
+
+.hero h1 {
+  letter-spacing: 0.5px;
+}
+
+/* ===== Group headers ===== */
+.member-group-title {
+  margin: 35px 0 12px;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary);
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 4px;
+}
+
+/* ===== Member list ===== */
+.member-list {
+  list-style: disc;
+  padding-left: 30px;   /* indent */
+  margin: 0 0 20px 0;
+}
+
+/* ===== Member item ===== */
+.member-item {
+  margin-bottom: 8px;
+  color: #000;          /* tên màu đen */
+}
+
+/* ===== Member name ===== */
+.member-name {
+  font-weight: 500;
+}
+
+/* ===== Profile link ===== */
+.member-item a {
+  margin-left: 8px;
+  font-size: 14px;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.member-item a:hover {
+  text-decoration: underline;
+}
+

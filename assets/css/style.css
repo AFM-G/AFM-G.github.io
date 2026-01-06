@@ -215,3 +215,14 @@ footer {
   background: #f5f5f5;
   border-radius: 6px;
 }
+
+.activity-album summary::before {
+  content: "▸";
+  display: inline-block;
+  margin-right: 8px;
+  transition: transform 0.2s ease;
+}
+
+.activity-album[open] summary::before {
+  transform: rotate(90deg);
+}

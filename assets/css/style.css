@@ -230,3 +230,24 @@ footer {
 .pi .member-name {
   font-weight: 700;
 }
+
+.member-profile{
+  display:flex;
+  gap:30px;
+  align-items:center;
+  margin-bottom:30px;
+}
+
+.member-photo{
+  width:180px;
+  border-radius:10px;
+}
+
+.member-info h2{
+  margin:0;
+}
+
+.member-info p{
+  margin-top:8px;
+  font-size:16px;
+}

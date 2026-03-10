@@ -265,3 +265,13 @@ footer {
 .member-links a:hover{
   text-decoration:underline;
 }
+
+.project-list li{
+  margin-bottom:18px;
+}
+
+.project-list em{
+  color:#555;
+  display:block;
+  margin-top:4px;
+}

@@ -1,0 +1,15 @@
+/* AFM-G 2.2: visual fixes — loaded after the original stylesheet */
+.research-card .card-art { height: auto !important; aspect-ratio: 16 / 10 !important; display:flex; justify-content:center; align-items:center; background:#f1f5f7!important; overflow:hidden; }
+.research-card .card-art img { position:static!important; display:block!important; width:100%!important; height:100%!important; object-fit:contain!important; opacity:1!important; }
+.research-card .card-art::before,.research-card .card-art::after { content:none!important; display:none!important; }
+.research-card .orb,.research-card [class^="orb-"] {display:none!important}
+.research-card .card-index{position:absolute!important;left:10px!important;bottom:10px!important;z-index:3;background:#0a2639e3;color:white;padding:4px 8px}
+.research-photograph{max-width:100%!important;width:100%!important;overflow:visible!important}
+.research-photograph img{display:block;width:100%;height:auto!important;max-height:none!important;object-fit:contain!important}
+.hero-visual img{object-fit:contain!important}
+.people-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+.person .avatar.with-photo{width:220px!important;height:260px!important;max-width:100%!important}
+.person .avatar.with-photo img{width:100%;height:100%;object-fit:contain!important}
+.version-tag{font:700 10px/1.3 Arial,sans-serif;color:#0c667c;background:#e3f5f6;padding:5px 8px;border:1px solid #bae7e9;border-radius:4px;white-space:nowrap}
+.pub-group{margin-top:45px}.pub-group h2{font-size:27px;border-bottom:2px solid #167d96;padding-bottom:12px}
+@media(max-width:760px){.people-grid{grid-template-columns:1fr!important}.version-tag{font-size:9px}}

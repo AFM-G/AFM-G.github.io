@@ -1,0 +1,15 @@
+/* AFM-G v2.5: One authoritative override. Strict image sizing. */
+html,body{overflow-x:clip}
+.header{position:relative!important}
+.hero-grid{min-height:0!important;align-items:center!important}
+.hero-visual{height:330px!important;max-height:330px!important;min-height:0!important;overflow:hidden!important;background:#fff!important;border:1px solid #e1e8ef!important}
+.hero-visual img{position:static!important;display:block!important;width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;transform:none!important}
+.visual-label,.orb,.orb-02,.orb-03,.card-index{display:none!important}
+.research-card .card-art,.research-card .card-art:before,.research-card .card-art:after{background:white!important;box-shadow:none!important;transform:none!important}
+.research-card .card-art:before,.research-card .card-art:after,.research-card:before,.research-card:after{content:none!important;display:none!important}
+.research-card .card-art{height:190px!important;min-height:0!important;max-height:190px!important;overflow:hidden!important;padding:8px!important;position:relative!important;display:flex!important;align-items:center!important;justify-content:center!important}
+.research-card .card-art img{position:static!important;display:block!important;width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;transform:none!important;filter:none!important}
+.research-detail .research-photograph{display:block!important;max-width:780px!important;width:100%!important;max-height:350px!important;overflow:hidden!important;margin:0 auto 25px!important;padding:10px!important;background:#fff!important}
+.research-detail .research-photograph a{display:block!important;width:100%!important}
+.research-detail .research-photograph img{display:block!important;position:static!important;width:100%!important;height:auto!important;max-height:300px!important;object-fit:contain!important;margin:auto!important;transform:none!important}
+@media(max-width:768px){.hero-grid{grid-template-columns:1fr!important}.hero-visual{height:260px!important;max-height:260px!important}.research-card .card-art{height:170px!important;max-height:170px!important}}

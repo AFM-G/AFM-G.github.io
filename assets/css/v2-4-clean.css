@@ -1,0 +1,32 @@
+/* V2.4: clean research presentation; no decorative geometric objects. */
+.header {position:relative!important;top:auto!important} 
+.hero-grid{align-items:center!important}.hero-visual{height:auto!important;min-height:0!important;max-height:470px!important;overflow:hidden!important;border:1px solid #e4ebf0!important;background:#f5f8fa!important}
+.hero-visual img{width:100%!important;height:440px!important;max-height:440px!important;object-fit:contain!important;display:block!important;position:static!important}
+.hero-visual .visual-label{display:none!important}
+.research-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:22px!important;align-items:stretch!important}
+.research-card,.research-card:before,.research-card:after{transform:none!important;filter:none!important;box-shadow:none!important}
+.research-card{min-width:0!important;display:flex!important;flex-direction:column!important;border:1px solid #dce6ec!important;border-radius:8px!important;overflow:hidden!important;background:white!important}
+.research-card .card-art{height:238px!important;max-height:238px!important;min-height:0!important;aspect-ratio:auto!important;padding:8px!important;background:#f5f8fa!important;display:flex!important;align-items:center!important;justify-content:center!important;overflow:hidden!important;position:relative!important}
+.research-card .card-art img{width:100%!important;height:100%!important;max-height:220px!important;max-width:100%!important;object-fit:contain!important;position:static!important;filter:none!important;transform:none!important;opacity:1!important}
+.research-card .card-art:before,.research-card .card-art:after,.research-card .orb,.research-card [class*="orb"],.research-card [class*="shape"],.research-card .card-index{display:none!important;content:none!important}
+.research-card .card-body{padding:22px!important;flex:1!important}
+.research-detail .research-photograph{max-width:100%!important;max-height:520px!important;padding:12px!important;overflow:auto!important;background:#f6f8fa!important;border:1px solid #e2e8ec!important}
+.research-detail .research-photograph img{display:block!important;width:auto!important;height:auto!important;max-width:100%!important;max-height:480px!important;object-fit:contain!important;margin:0 auto!important}
+.research-detail .research-photograph a{display:block!important;text-align:center!important}
+.research-detail .research-photograph figcaption{margin:8px 0 0;color:#607588;font-size:12px;text-align:center}
+/* Clear hierarchy: PI isolated above all other member categories. */
+.people-section{margin-bottom:52px!important}.people-section > h2{font-size:clamp(24px,3vw,32px)!important;margin-bottom:24px!important}
+.people-section.pi-section .people-grid{display:block!important}
+.pi-profile{display:grid!important;grid-template-columns:280px minmax(0,1fr)!important;gap:36px!important;border:1px solid #dde7ee!important;border-radius:12px!important;background:#fff!important;padding:32px!important;align-items:start!important}
+.pi-profile .pi-photo{width:100%;max-width:280px;height:auto;max-height:385px;object-fit:contain;background:#f5f8fa;border-radius:8px}
+.pi-profile .pi-overview h3{font-size:clamp(24px,3vw,34px);margin:0 0 8px}.pi-profile .pi-overview .pi-position{color:#4780a0;font-weight:600}
+.pi-profile .pi-overview .pi-contacts{margin-top:16px;font-size:14px}.pi-profile .pi-contacts a{color:#127d9c;text-decoration:underline}
+.pi-profile .pi-details{grid-column:1 / -1;border-top:1px solid #dce6ee;padding-top:20px;columns:2;column-gap:50px}
+.pi-profile .pi-details section{break-inside:avoid;margin:0 0 22px}.pi-profile .pi-details h3{font-size:18px;margin:0 0 10px}.pi-profile .pi-details p,.pi-profile .pi-details li{font-size:14px;line-height:1.7;color:#4c6175}
+.pi-profile .pi-details ul{margin:0;padding-left:20px}
+.other-members .people-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:16px!important}
+.other-members .person{border:1px solid #dce6ee!important;border-radius:8px!important;padding:18px!important;min-height:116px!important;display:flex!important;align-items:center!important;gap:16px!important;background:white!important}
+.other-members .person .avatar{width:68px!important;height:68px!important;flex:0 0 68px!important;font-size:24px!important}
+.other-members .person h3{font-size:16px!important;margin:0 0 4px!important}.other-members .person p{font-size:12px!important;margin:0!important}
+@media(max-width:900px){.research-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.other-members .people-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.pi-profile{grid-template-columns:190px minmax(0,1fr)!important}.pi-profile .pi-details{columns:1}}
+@media(max-width:620px){.research-grid,.other-members .people-grid{grid-template-columns:1fr!important}.pi-profile{grid-template-columns:1fr!important;padding:20px!important}.pi-profile .pi-photo{max-width:230px}.pi-profile .pi-details{grid-column:1}.hero-visual img{height:290px!important}.research-card .card-art{height:240px!important}}
